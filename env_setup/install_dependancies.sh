@@ -1,5 +1,5 @@
 #!/bin/bash
 apt-get install npm nodejs -y
 echo $(pwd)
-echo $(ls)
+echo $(ls ./deployment-root)
 npm install
