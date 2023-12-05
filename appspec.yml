@@ -5,11 +5,11 @@ files:
     destination: /home/ubuntu/testing-cicd
 hooks:
   AfterInstall:
-    - location: env_setup/install_dependancies
+    - location: /home/ubuntu/testing-cicd/env_setup/install_dependancies
       timeout: 300
       runas: root
   ApplicationStart:
-    - location: env_setup/start_server
+    - location: /home/ubuntu/testing-cicd/env_setup/start_server
       timeout: 300
       runas: root
   
