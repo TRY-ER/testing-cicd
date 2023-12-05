@@ -21,7 +21,11 @@ jobs:
       - name: Installing dependancies
         run: npm install
       - name: Start Test Server
-        run: npm start
+        run: npm start &
+      - name: Exitting the Server Process
+        if: always()
+        run: |
+          pkill -f "npm start"
 
   continuous-deployment:
     runs-on: ubuntu-latest
