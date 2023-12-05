@@ -22,10 +22,6 @@ jobs:
         run: npm install
       - name: Start Test Server
         run: npm start &
-      - name: Exitting the Server Process
-        if: always()
-        run: |
-          kill -f "npm start"
 
   continuous-deployment:
     runs-on: ubuntu-latest
