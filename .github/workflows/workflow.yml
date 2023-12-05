@@ -25,7 +25,7 @@ jobs:
       - name: Exitting the Server Process
         if: always()
         run: |
-          pkill -f "npm start"
+          kill -f "npm start"
 
   continuous-deployment:
     runs-on: ubuntu-latest
