@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Setting up node js for version 12
-        uses: actions/setup-node@3
+        uses: actions/setup-node@v3
         with:
           node-version: '12'
       - name: configuring AWS credentials
