@@ -1,5 +1,4 @@
 #!/bin/bash
 apt-get install npm nodejs -y
-echo $(pwd)
-echo $(ls)
+cd /home/ubuntu/testing-cicd
 npm install
