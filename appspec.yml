@@ -4,6 +4,8 @@ files:
   - source: .
     destination: /home/ubuntu/testing-cicd
 hooks:
+  Install:
+    - location: /home/ubuntu/testing-cicd/env_setup/cloner.sh
   AfterInstall:
     - location: /home/ubuntu/testing-cicd/env_setup/install_dependancies
       timeout: 300
