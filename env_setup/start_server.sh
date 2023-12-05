@@ -1,2 +1,3 @@
 #!/bin/bash
-npm start
+cd /home/ubuntu/testing-cicd
+npm start &
