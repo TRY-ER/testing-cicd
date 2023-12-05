@@ -18,6 +18,8 @@ jobs:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }} 
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY_ID }} 
           aws-region: ${{ secrets.AWS_REGION }}
+      - name: Installing dependancies
+        run: npm install
       - name: Start Test Server
         run: npm start
 
