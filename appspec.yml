@@ -6,12 +6,14 @@ files:
 hooks:
   Install:
     - location: /home/ubuntu/testing-cicd/env_setup/cloner.sh
+      timeout: 300
+      runas: root
   AfterInstall:
-    - location: /home/ubuntu/testing-cicd/env_setup/install_dependancies
+    - location: /home/ubuntu/testing-cicd/env_setup/install_dependancies.sh
       timeout: 300
       runas: root
   ApplicationStart:
-    - location: /home/ubuntu/testing-cicd/env_setup/start_server
+    - location: /home/ubuntu/testing-cicd/env_setup/start_server.sh
       timeout: 300
       runas: root
   
