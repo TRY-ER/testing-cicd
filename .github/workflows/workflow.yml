@@ -17,7 +17,7 @@ jobs:
         with:
           aws-access-key-id:${{ secrets.AWS_ACCESS_KEY_ID }} 
           aws-secret-access-key-id:${{ secrets.AWS_SECRET_ACCESS_KEY_ID }} 
-          aws-region: ${{ secrets.AWS_REGION}}
+          aws-region: ${{ secrets.AWS_REGION }}
       - name: Start Test Server
         run: npm start
 
@@ -31,7 +31,7 @@ jobs:
         with: 
           aws-access-key-id:${{ secrets.AWS_ACCESS_KEY_ID }} 
           aws-secret-access-key-id:${{ secrets.AWS_SECRET_ACCESS_KEY_ID }} 
-          aws-region:${{ secrets.AWS_REGION}}
+          aws-region:${{ secrets.AWS_REGION }}
       - name: create CodeDeploy Deployment
         id: deploy
         run: |
