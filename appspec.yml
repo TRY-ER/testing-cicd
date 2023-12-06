@@ -4,7 +4,11 @@ files:
   - source: .
     destination: /home/ubuntu/testing-cicd
 hooks:
-  AfterInstall:
+  ApplicationStop:
+    - location: env_setup/stop_server.sh
+      timeout: 300
+      runas: root
+  BeforeInstall:
     - location: env_setup/install_dependancies.sh
       timeout: 300
       runas: root
