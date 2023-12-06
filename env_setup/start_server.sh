@@ -8,4 +8,4 @@ cd /home/ubuntu/testing-cicd
 
 # start the application with pm2
 echo starting application...
-sudo pm2 start npm start 
+sudo pm2 start --name dummy_service npm -- start 
